@@ -12,10 +12,10 @@ def print_first_directors_movie_titles
   nds = directors_database
   row_index = 0 
   while row_index < nds.length do 
-    if nds[row_index][:name] = "Stephen Spielberg"
+    if nds[row_index][:name] == "Stephen Spielberg"
       column_index = 0 
       while column_index < nds[row_index][:movies].length do
-        puts nds[row_index][:movies][column_index]
+        print nds[row_index][:movies][column_index]
         column_index += 1 
       end
     end
